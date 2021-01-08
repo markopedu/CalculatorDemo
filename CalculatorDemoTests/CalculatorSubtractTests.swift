@@ -1,17 +1,17 @@
 //
-//  CalculatorTests.swift
+//  CalculatorSubtractTests.swift
 //  CalculatorDemoTests
 //
-//  Created by Marko Poikkimäki on 2021-01-07.
+//  Created by Marko Poikkimäki on 2021-01-08.
 //
 
 import XCTest
 @testable import CalculatorDemo
 
-class CalculatorTests: XCTestCase {
-
-    var calculator: Calculator!
+class CalculatorSubtractTests: XCTestCase {
     
+    var calculator: Calculator!
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         calculator = Calculator()
@@ -22,9 +22,8 @@ class CalculatorTests: XCTestCase {
         calculator = nil
     }
 
-    func testAdd() {
-        let result = calculator.add(1, 2)
-        XCTAssertEqual(result, 3)
+    func testSubtract() {
+        let result = calculator.subtract(4, 2)
+        XCTAssertEqual(result, 2)
     }
-    
 }
